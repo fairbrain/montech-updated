@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- jQuery (required for Slick Slider) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" /> -->
+
+    <!-- Slick Slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="sticky-top bg-white">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="./assets/img/MONTECH LOGO PVT.webp" alt="logo"
+                        width="150" height="auto"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  ms-auto gap-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-work.html">OUR WORK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">EVENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CAREER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <form class="input-group border rounded ms-2" role="search" style="width: 25%">
+                        <input class="form-control me-2  border-0" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn" type="submit"><i class="ri-search-2-line"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative">
+        <video preload="none" autoplay loop muted poster="./assets/videos/poster.webp" height="100%" width="100%">
+            <source src="./assets/videos/Alwar - Khetri Mov Lineup 1 (online-video-cutter.com).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- <video  src="./assets/videos/Alwar - Khetri Mov Lineup 1 (online-video-cutter.com).mp4" muted
+            autoplay loop></video> -->
+        <img src="./assets/img/playbtn.webp" alt="playbtn" id="playBtn"
+            class="animate__animated animate__pulse animate__infinite">
+        <!-- Popup Modal -->
+        <div class="video-popup" id="videoPopup">
+            <div class="popup-content">
+                <span class=".hero-close-btn ps-2" id="closeBtn">&times;close</span>
+                <video id="videoPlayer" controls>
+                    <!-- Video source will be added dynamically -->
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-us py-3 text-center position-relative mt-5">
+        <h2 class="">ABOUT US</h2>
+        <div class="container my-5">
+            <div class="row text-start">
+                <div class="col-md-5">
+                    <img src="./assets/img/about.webp" alt="about" class="img-fluid">
+                </div>
+                <div class="col-md-7">
+                    <p><strong>Montech Entertainment Private Limited</strong> has been engaging the
+                        younger generation as a pioneer in producing unique animation
+                        material. Over the years, our characters have become incredibly
+                        popular, contributing to the company's rise to prominence in the
+                        fields of licensing and merchandise, movie production and
+                        distribution, digital business, retail stores, and events. We apply our
+                        profound creative knowledge to all tasks, completing projects of any
+                        size or complexity. We aim to create lively animations by focusing on
+                        even the tiniest details, as they can have a significant effect.
+                        <br>
+                        <br>
+                        <strong>Montech Entertainment Private Limited</strong> encourages businesses
+                        everywhere to create their most recognizable pieces. In order to
+                        deliver the universal art of storytelling to audiences worldwide, our
+                        award-winning teams of artists and engineers collaborate with the
+                        national and international creative community in the fields of cinema,
+                        television, animation, gaming, brand experience, and advertising. We
+                        offer top-notch2D and 3D animations, modelling, multi-award-winning
+                        visual effects (VFX) and gaming services to the world's media,
+                        advertising, and entertainment sectors by fusing creativity and
+                        technology. Nothing is too big for us to produce to an exceptionally
+                        high caliber.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="our-team">
+        <div class="container text-center py-4">
+            <h2>Our Team</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="team-card shadow-md d-flex flex-column h-100">
+                        <div class="image-section flex-grow-1">
+                            <img src="./assets/team/Mriganka.jpg" alt="mriganka" class="img-fluid">
+                        </div>
+                        <div class="info-section bg-white p-3 w-100">
+
+                            <p class="text-center fw-bold mb-0">Mriganka Mondal</p>
+                            <p class="text-center">Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="team-card shadow-md d-flex flex-column h-100">
+                        <div class="image-section flex-grow-1">
+
+                            <img src="./assets/team/Mousumi.jpg" alt="mousumi" class="img-fluid">
+                        </div>
+                        <div class="info-section bg-white p-3 w-100">
+
+                            <p class="text-center fw-bold mb-0">Mousumi Mondal (Chandra)</p>
+                            <p class="text-center">Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="team-card shadow-md d-flex flex-column h-100">
+                        <div class="image-section flex-grow-1">
+
+                            <img src="./assets/team/Anewsha.jpg" alt="anwesha" class="img-fluid">
+                        </div>
+                        <div class="info-section bg-white p-3 w-100">
+
+                            <p class="text-center fw-bold mb-0">Anwesha Paul</p>
+                            <p class="text-center">CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="team-card shadow-md d-flex flex-column h-100">
+                        <div class="image-section flex-grow-1">
+
+                            <img src="./assets/team/Pradip Babu.jpg" alt="pradip" class="img-fluid">
+                        </div>
+                        <div class="info-section bg-white p-3 w-100">
+
+                            <p class="text-center fw-bold mb-0">Pradip Bhattacharya</p>
+                            <p class="text-center">Senior Advisor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section class="our-work">
+        <div class="container text-center">
+            <h2>Our Work</h2>
+            <div class="work-description">
+                <div class="work-desc-img position-relative">
+                    <img src="assets/img/playbtn.webp" alt="playbtn" class="play-btn" width="100">
+                    <img src="./assets/img/montech-vedio-1.webp" class="img-fluid mb-5 rounded-5" alt="Work Image">
+                </div>
+                <p><strong>Montech Entertainment Private Limited</strong> has contributed to upskill the constructive
+                    future in the animation world with
+                    creativity and originality. We collaborate with both national and international filmmakers to create
+                    animated tales that
+                    are remarkable. We are in a field that is always changing, revolutionizing advertising and brand
+                    experiences with a
+                    potent blend of artistry and narrative. Rapidly adjusting to a changing media environment, we are
+                    maximizing the
+                    possibilities of novel and developing technologies.</p>
+                <p><strong>Montech Entertainment Private Limited</strong> has worked on around 15 projects with Reliance
+                    Animation Studio Private Limited,
+                    including the project ‘Bhaiya ji Balban’. Along with this, we have also engaged with several
+                    international
+                    projects like ‘Titoo’, ‘Dabangg’ and ‘Lambu G, Tingu G’. All of these projects were made in
+                    collaboration
+                    with the Singaporean company ‘Cosmos Maya’. Also, we are currently working with the renowned
+                    animation company
+                    ‘Graphiti’ on the project ‘Bharat Hai Hum’ (KTB) Other notable workpieces made by us are ‘Creepy
+                    Candy’,
+                    ‘Courtroom’, ‘Chikoo aur Banty’ and ‘Narayana’ with ‘Animatzione’ and ‘Fukrey Boyzzz’ in
+                    collaboration with ‘Paperboat’.
+                    There is another project that we are working on at the moment which is called ‘Jay Jagannath’.</p>
+                <p> Currently, we are working on the project ‘Bireshwar Vivekananda’ partnering with the Ramakrishna
+                    Mission,
+                    funded by Ministry of Culture, Government of India. ‘The Missile Man’, ‘Tota Kahini’ and ‘Juto
+                    Abishkar’
+                    are our own IP made by our production team.Our main objective is to introduce our Indian artworks to
+                    the
+                    Western world, and also inculcate the use of advanced technology from the West.</p>
+                <p>
+            </div>
+            <!-- Add more content as necessary -->
+        </div>
+    </section>
+
+    <section class="partners ">
+
+        <div class="container text-center py-5">
+            <h2 class="mb-4">We’ve worked with</h2>
+            <div class="partners-slider">
+                <div class="partner-logo">
+                    <img src="./assets/img/animatzione.webp" alt="partner-logo" class="img-fluid">
+                </div>
+                <div class="partner-logo">
+                    <img src="./assets/img/Cosmos-Maya.webp" alt="partner-logo" class="img-fluid">
+                </div>
+                <div class="partner-logo">
+                    <img src="./assets/img/PaperBoat.webp" alt="partner-logo" class="img-fluid">
+                </div>
+                <div class="partner-logo">
+                    <img src="./assets/img/SSOFTOONS.webp" alt="partner-logo" class="img-fluid">
+                </div>
+                <div class="partner-logo">
+                    <img src="./assets/img/RELIANCE.webp" alt="partner-logo" class="img-fluid">
+                </div>
+                <div class="partner-logo">
+                    <img src="./assets/img/hiti.webp" alt="partner-logo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="text-center">
+            <h2>Projects</h2>
+            <div class="project-slider">
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/CHIKOO AUR BUNTY.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/CHIKOO AUR BUNTY.webp" />
+                        </a>
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/CREEPY CANDY.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/CREEPY CANDY.webp" />
+                        </a>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/DABANGG.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/DABANGG.webp" />
+                        </a>
+
+
+
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/FUKREY BOYZZZ.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/FUKREY BOYZZZ.webp" />
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/KEYMON ACHE.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/KEYMON ACHE.webp" />
+                        </a>
+
+
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/LAMBU-G TINGU-G.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/LAMBU-G TINGU-G.webp" />
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/CHIKOO AUR BUNTY.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/CHIKOO AUR BUNTY.webp" />
+                        </a>
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/CREEPY CANDY.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/CREEPY CANDY.webp" />
+                        </a>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/DABANGG.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/DABANGG.webp" />
+                        </a>
+
+
+
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/FUKREY BOYZZZ.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/FUKREY BOYZZZ.webp" />
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/KEYMON ACHE.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/KEYMON ACHE.webp" />
+                        </a>
+
+
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/LAMBU-G TINGU-G.webp" data-fancybox="gallery" data-caption="">
+                            <img src="./assets/img/LAMBU-G TINGU-G.webp" />
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider-nav d-flex justify-content-center gap-5 my-3">
+                <button type="button" class="arrow-left"><i class="ri-arrow-left-wide-line"></i></button>
+                <button type="button" class="arrow-right"><i class="ri-arrow-right-wide-line"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- Works Section -->
+    <section class="works">
+        <div class="text-center">
+            <h2>OUR WORKS (IP)</h2>
+            <div class="project-slider">
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/VRINDAVAN BACKSIDE.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/VRINDAVAN BACKSIDE.webp" />
+                        </a>
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/VRINDAVAN BACKSIDE.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/VRINDAVAN BACKSIDE.webp" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/SAPTARISHI.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/SAPTARISHI.webp" />
+                        </a>
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/SAPTARISHI.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/SAPTARISHI.webp" />
+                        </a>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/VRINDAVAN BACKSIDE GARDEN.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/VRINDAVAN BACKSIDE GARDEN.webp" />
+                        </a>
+
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/VRINDAVAN BACKSIDE GARDEN.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/VRINDAVAN BACKSIDE GARDEN.webp" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/VRINDAVAN BACKSIDE.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/VRINDAVAN BACKSIDE.webp" />
+                        </a>
+
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/VRINDAVAN BACKSIDE.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/VRINDAVAN BACKSIDE.webp" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/SAPTARISHI.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/SAPTARISHI.webp" />
+                        </a>
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/SAPTARISHI.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/SAPTARISHI.webp" />
+                        </a>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/VRINDAVAN BACKSIDE GARDEN.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/VRINDAVAN BACKSIDE GARDEN.webp" />
+                        </a>
+
+                    </div>
+                    <div class="project-thumbnail">
+                        <a href="./assets/img/VRINDAVAN BACKSIDE GARDEN.webp" data-fancybox="gallery1" data-caption="">
+                            <img src="./assets/img/VRINDAVAN BACKSIDE GARDEN.webp" />
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="slider-nav d-flex justify-content-center gap-5 my-3">
+                <button type="button" class="arrow-left"><i class="ri-arrow-left-wide-line"></i></button>
+                <button type="button" class="arrow-right"><i class="ri-arrow-right-wide-line"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section class="career overflow-hidden">
+        <div class="container py-5 text-center">
+            <div class="row align-items-end">
+                <div class="col-md-6 text-start">
+                    <h2 class="fs-1 text-uppercase font-myriad-regular fw-bolder ">Join Our Team</h2>
+                    <p class="fw-bold text-secondary">and do the best work of your life.</p>
+                    <form class="row">
+                        <div class="form-group col-md-6">
+                            <label for="name">First Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Last Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="position">Date of Birth</label>
+                            <input type="date" class="form-control" id="position">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="email">Email Address</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="email">Mobile Number</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="email">Position Applying for</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="email">Available start date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="email"><i class="ri-attachment-2"></i>Attach CV</label>
+                            <input type="file" class="form-control">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Apply</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/img/REMO.webp" alt="fat-man" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Get in touch section -->
+    <section class="get-in-touch container my-4">
+        <h2 class="fs-1 text-dark fw-bold">GET IN TOUCH</h2>
+        <p class="text-secondary lead fw-bold">Stay in touch and you won't miss a thing!
+        </p>
+        <form action="#">
+            <input type="text" class="form-control mb-3" placeholder="write your email">
+            <textarea name="" id="" rows="10" class="form-control mb-3" placeholder="Write Your Message"></textarea>
+            <div class="submit-btn text-center">
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </div>
+        </form>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="row align-items-center text-white">
+                <div class="col-md-6">
+                    <h2 class="font-myriad-regular fw-bold fs-1">CONTACT US</h2>
+                    <p><strong>Corporate Office</strong> <br>
+                        7A, Deshpran, Sasmal Road, <br>
+                        Charumarket, Tollygunge, Kolkata- 700033</p>
+                    <p><strong>Registered Office</strong> <br>
+                        166, Vivekananda Pally, Chuanpur, <br>
+                        P.O & P.S : Berhampore, <br>
+                        District : Murshidabad, <br>
+                        West Bengal, India 742101</p>
+                    <div class="phone-no d-flex align-items-center gap-4">
+                        <p class="mb-0 text-white">Contact</p>
+                        <div class="call-us">
+                            <a href="tel:+91 9932124978"><i class="ri-phone-line"></i>+91 9932124978</a>
+                            <a href="tel:+91 9064060051"><i class="ri-phone-line"></i>+91 9064060051</a>
+                        </div>
+
+                    </div>
+
+                    <a href="mailto:montech.ent.pvt.ltd@gmail.com"
+                        class="text-decoration-none fs-5 d-block mt-3 text-white"><i
+                            class="ri-mail-send-line me-1"></i>montech.ent.pvt.ltd@gmail.com</a>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.9204768383565!2d88.34302597405716!3d22.50716663536777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0270c854ae7c97%3A0x23447d8600ed4893!2sMontech%20Entertainment!5e0!3m2!1sen!2sin!4v1724597314755!5m2!1sen!2sin"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.4719416856333!2d88.25920077078518!3d24.084893428234984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f97c35198f0d7b%3A0x6a54f2196d082dd!2s166%2C%20Vivekananda%20Pally%20Rd%2C%20Talbagan%2C%20Bhakuri%20Village%2C%20Berhampore%2C%20West%20Bengal%20742101!5e0!3m2!1sen!2sin!4v1724597453370!5m2!1sen!2sin"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="text-center text-white">&copy; 2024 Montech Entertainment Pvt. Ltd. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <!-- Footer Section -->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+</body>
+
+</html>
