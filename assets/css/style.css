@@ -144,7 +144,7 @@ body {
 }
 
 
-video {
+.hero video {
     width: 100%;
     object-position: center;
     object-fit: cover;
@@ -553,6 +553,11 @@ aside .slider-nav-ip .slick-current.slick-active img {
 }
 
 @media (max-width: 768px) {
+
+    .video-modal video {
+        height: 100% !important;
+        width: 100% !important;
+    }
 
     .freelance-slider {
         height: auto;
