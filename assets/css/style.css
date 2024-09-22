@@ -518,8 +518,9 @@ aside .slider-nav-ip .slick-current.slick-active img {
     z-index: 99;
 }
 
+
 .video-info h3 {
-    font-size: 7rem;
+    font-size: 5.5rem;
     font-weight: 900;
     line-height: 1.2;
     opacity: 0.1;
